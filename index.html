@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drag and Drop</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="todo-list d-flex align-items-center justify-content-center">
+      <div class="container mt-5 pt-5">
+        <h3 class="text-center shadow-sm d-table p-1 px-5 border m-auto user-select-none">Drag and Drop</h3>
+        <div class="border p-3 shadow-sm col-md-10 m-auto mt-3">
+          <form action="" class="add-form row p-2">
+            <div class="col-8">
+              <input id="input-todo" type="text" class="form-control" placeholder="New todo ..." />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary w-100" id="add-task">ADD+</button>
+            </div>
+          </form>
+
+          <div class="row mt-3">
+            <div class="col-lg-4 col-md-6">
+              <div class="box p-2 rounded mb-3 bg-danger">
+                <h4 class="head">TOODO</h4>
+                <p class="task" draggable="true">Html</p>
+                <p class="task" draggable="true">Css</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="box p-2 rounded mb-3 bg-warning">
+                <h4 class="head">DOING</h4>
+                <p class="task" draggable="true">Html</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="box p-2 rounded mb-3 bg-success">
+                <h4 class="head">DONE</h4>
+                <p class="task" draggable="true">Html</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
